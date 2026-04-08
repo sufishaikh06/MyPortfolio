@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from 'next'
 import { Plus_Jakarta_Sans, Inter } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
 import { CustomCursor } from '@/components/custom-cursor'
 import { Navigation } from '@/components/navigation'
 import './globals.css'
@@ -54,7 +53,6 @@ export default function RootLayout({
         <CustomCursor />
         <Navigation />
         {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
   )
