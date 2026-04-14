@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
-import { Mail, Send, Github, Linkedin, Twitter, MapPin, Clock, CheckCircle, AlertCircle } from "lucide-react"
+import { Mail, Send, Github, Linkedin, MapPin, Clock, CheckCircle, AlertCircle } from "lucide-react"
 
 export function Contact() {
   const headingRef = useRef<HTMLDivElement>(null)
@@ -36,10 +36,9 @@ export function Contact() {
   }
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com/sufishaikh", label: "GitHub", color: "hover:text-white" },
-    { icon: Linkedin, href: "https://linkedin.com/in/sufishaikh", label: "LinkedIn", color: "hover:text-blue-400" },
-    { icon: Twitter, href: "https://twitter.com/sufishaikh", label: "Twitter", color: "hover:text-sky-400" },
-    { icon: Mail, href: "mailto:sufi@example.com", label: "Email", color: "hover:text-primary" },
+    { icon: Github, href: "https://github.com/sufishaikh06", label: "GitHub", color: "hover:text-white" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/sufi-shaikh-b7a60a328", label: "LinkedIn", color: "hover:text-blue-400" },
+    { icon: Mail, href: "mailto:sufishaikhofficial2@gmail.com", label: "Email", color: "hover:text-primary" },
   ]
 
   return (
@@ -81,7 +80,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Location</p>
-                    <p className="font-medium">Pune, India</p>
+                    <p className="font-medium">Shirdi, India</p>
                   </div>
                 </div>
               </div>
