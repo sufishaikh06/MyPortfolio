@@ -7,43 +7,43 @@ import Link from "next/link"
 
 const projects = [
   {
-    title: "AttendEase",
-    description: "A modern attendance management system built for educational institutions. Features real-time tracking, analytics dashboard, and automated reporting.",
+    title: "Marathwada Kalagram",
+    description: "Designed and developed a bilingual (Marathi + English) informational website and integrated online store for a women's handicraft NGO in Parbhani, Maharashtra. Implemented WhatsApp-based ordering and UPI payment flow across 5 product categories with zero hosting cost via GitHub Pages.",
     status: "live",
-    gradient: "from-blue-500 to-cyan-500",
-    techStack: ["React", "Supabase", "Tailwind CSS", "Vercel"],
-    liveUrl: "#",
-    githubUrl: "#",
+    gradient: "from-orange-500 to-amber-500",
+    techStack: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
+    liveUrl: "https://sufishaikh06.github.io/marathwada-kalagram/",
+    githubUrl: "https://github.com/sufishaikh06",
     date: "2024",
   },
   {
-    title: "Janaseva Foundation",
-    description: "NGO website designed to showcase initiatives, accept donations, and connect volunteers. Clean, accessible design with CMS integration.",
+    title: "Shree Jewellery",
+    description: "Developed and deployed a responsive e-catalog website for a local jewelry business. Features a modern, mobile-first UI, an interactive product showcase, and dynamic WhatsApp API integration to streamline direct customer inquiries.",
     status: "live",
-    gradient: "from-emerald-500 to-teal-500",
-    techStack: ["Next.js", "Tailwind CSS", "Sanity CMS"],
-    liveUrl: "#",
-    githubUrl: "#",
+    gradient: "from-yellow-500 to-pink-500",
+    techStack: ["HTML5", "Tailwind CSS", "JavaScript", "Netlify"],
+    liveUrl: "https://shreejewellery.netlify.app/",
+    githubUrl: "https://github.com/sufishaikh06",
     date: "2024",
   },
   {
-    title: "DevConnect",
-    description: "A developer networking platform with real-time chat, project collaboration features, and skill-based matching algorithm.",
-    status: "in-progress",
-    gradient: "from-purple-500 to-pink-500",
-    techStack: ["React", "Node.js", "Socket.io", "MongoDB"],
-    liveUrl: null,
-    githubUrl: "#",
+    title: "Forex In Future",
+    description: "A premium, high-conversion landing page for a financial education and forex consulting brand. Features a dark-themed glassmorphism UI, a custom interactive particle background via Canvas API, an infinite-scrolling live currency ticker, and scroll-triggered animations using the Intersection Observer API.",
+    status: "live",
+    gradient: "from-emerald-500 to-cyan-500",
+    techStack: ["HTML5", "CSS3", "Vanilla JavaScript", "Netlify"],
+    liveUrl: "https://forexinfuture.netlify.app/",
+    githubUrl: "https://github.com/sufishaikh06",
     date: "2024",
   },
   {
-    title: "AI Study Assistant",
-    description: "An intelligent study companion that uses AI to generate flashcards, quizzes, and summaries from uploaded documents.",
-    status: "in-progress",
-    gradient: "from-orange-500 to-red-500",
-    techStack: ["Next.js", "OpenAI API", "Supabase", "Tailwind"],
-    liveUrl: null,
-    githubUrl: "#",
+    title: "Zynqro — Restaurant QR Ordering",
+    description: "A full-stack SaaS product that digitalizes the restaurant dining experience. Customers scan a table QR code to browse the menu and place orders — no app needed. Features a real-time manager dashboard, menu admin panel with image uploads, live order tracking, and dual payment support.",
+    status: "live",
+    gradient: "from-violet-500 to-purple-500",
+    techStack: ["React", "Vite", "Tailwind CSS", "Supabase", "Netlify"],
+    liveUrl: "https://zynqro.netlify.app/",
+    githubUrl: "https://github.com/sufishaikh06",
     date: "2025",
   },
 ]
@@ -131,6 +131,8 @@ function ProjectCard({
           {project.liveUrl && (
             <Link
               href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-primary to-secondary text-white text-sm font-medium hover:opacity-90 transition-opacity"
             >
               <Globe className="h-4 w-4" />
@@ -140,6 +142,8 @@ function ProjectCard({
           {project.githubUrl && (
             <Link
               href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border text-muted-foreground text-sm font-medium hover:border-primary hover:text-primary transition-colors"
             >
               <Github className="h-4 w-4" />
@@ -205,7 +209,9 @@ export function Projects() {
         {/* View All Link */}
         <div className="mt-12 text-center">
           <Link
-            href="#"
+            href="https://github.com/sufishaikh06"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
           >
             <span>View all projects on GitHub</span>
